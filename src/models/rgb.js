@@ -337,7 +337,7 @@ class RgbModel {
             console.log('cSegments:', cSegments);
             // w and h don't matter since position.array is being overwritten
 
-            let geom = new THREE.PlaneBufferGeometry(
+            let geom = new THREE.PlaneGeometry(
                 1, 1, cSegments[0], cSegments[1]);
             geom.attributes.position.array = new Float32Array(arr);
 
